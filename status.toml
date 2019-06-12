@@ -1,0 +1,101 @@
+theme = "solarized-dark"
+icons = "awesome"
+
+[[block]]
+block = "focused_window"
+max_width = 21
+
+[[block]]
+block = "music"
+buttons = ["play", "next"]
+marquee = true
+marquee_interval = 5
+marquee_speed = 0.2
+
+#[[block]]
+#block = "weather"
+#format = "{temp}°" 
+#service = { name = "openweathermap", api_key = "e1bdedf60f3b76dac085ffaf88b66749", city_id = "4926563", units = "imperial" }
+#interval = 6000
+
+[[block]]
+block = "net"
+device = "wlp1s0"
+ssid = true
+bitrate = false
+ip = false
+speed_up = false
+speed_down = false
+graph_up = false
+graph_down = false
+interval = 1
+
+[[block]]
+block = "disk_space"
+path = "/"
+alias = "/"
+info_type = "available"
+unit = "GB"
+interval = 30
+
+
+[[block]]
+block = "net"
+device="wlp1s0"
+ssid=false
+bitrate=false
+ip=false
+speed_up=false
+speed_down=true
+graph_up=false
+graph_down=false
+interval = 1
+
+[[block]]
+block = "memory"
+display_type = "memory"
+format_mem = "{MFg}GB Free"
+format_swap = "{SUg}GB Swap"
+
+[[block]]
+block = "cpu"
+interval = 1
+frequency = true
+
+[[block]]
+block = "load"
+interval = 1
+format = "{1m}"
+
+[[block]]
+block = "toggle"
+text = "hi"
+command_on = "echo on"
+command_off = "echo off"
+command_state = "echo start"
+
+[[block]]
+block = "xrandr"
+icons = true
+resolution = false
+step_width = 5
+interval = 10
+
+[[block]]
+block = "temperature"
+collapsed = true
+interval = 5
+
+[[block]]
+block = "battery"
+interval = 5
+format = "{percentage}% {time}"
+
+[[block]]
+block = "sound"
+step_width = 1
+
+[[block]]
+block = "time"
+interval = 1
+format = "%a %m/%d %T"
